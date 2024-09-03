@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 商品列表 ListView -->
+    <ListView
+        android:id="@+id/listViewProducts"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/bottomBar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:padding="16dp"/>
+
+    <!-- 底部按钮栏 -->
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@android:color/darker_gray"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/btnMessages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="消息"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btnMyProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btnPurchased"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已购买商品"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btnTransactionRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="交易记录"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btnPostProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发布商品"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <!-- 商品分类 TextView -->
+    <TextView
+        android:id="@+id/tvCategories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="16dp"
+        android:text="商品分类"
+        android:textSize="18sp"
+        android:background="@android:color/white"
+        android:elevation="4dp"/>
+</RelativeLayout>

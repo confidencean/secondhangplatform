@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvAvatarUrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="头像 URL"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etAvatarUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入头像 URL"
+        android:inputType="textUri"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="更新头像"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
