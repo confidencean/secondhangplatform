@@ -27,4 +27,11 @@
         android:text="二手交易充值"
         android:layout_marginTop="16dp" />
 
+    <Button
+        android:id="@+id/Buyrecord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="我的购买记录"
+        android:layout_marginTop="16dp"/>
+
 </LinearLayout>

@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -60,10 +61,17 @@ public class RechargeActivity extends AppCompatActivity {
                 conn.setRequestProperty("appSecret", "27868ea89849efca5477b8d32b055187b2068");
                 conn.setDoOutput(true);
 
+                // 确保 userId 正确获取
+                SharedPreferences sharedPreferences = getSharedPreferences("MyAppPrefs", MODE_PRIVATE);
+                String userId = sharedPreferences.getString("userId", null);
+                if (userId == null) {
+                    return "Error: User ID is null";
+                }
+
                 // 构建请求体
                 JSONObject jsonObject = new JSONObject();
                 jsonObject.put("tranMoney", amount);
-               jsonObject.put("userId", userId);
+                jsonObject.put("userId", userId);
 
                 // 发送请求
                 OutputStream os = conn.getOutputStream();

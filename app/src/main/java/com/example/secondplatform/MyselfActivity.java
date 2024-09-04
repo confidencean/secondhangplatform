@@ -19,13 +19,13 @@ public class MyselfActivity extends AppCompatActivity {
 
         // 获取保存的信息
         SharedPreferences sharedPreferences = getSharedPreferences("MyAppPrefs", MODE_PRIVATE);
-        userId =  getIntent().getStringExtra("userId");
-        money = sharedPreferences.getInt("money", 0);
-        avatar = ((SharedPreferences) sharedPreferences).getString("avatar", null);
+        userId = sharedPreferences.getString("userId", null); // 从 SharedPreferences 获取 userId
+        money = sharedPreferences.getInt("money", 0); // 从 SharedPreferences 获取 money
+        avatar = sharedPreferences.getString("avatar", null); // 从 SharedPreferences 获取 avatar
 
         Button btnEditUserInfo = findViewById(R.id.UserInfo);
         Button btnRecharge = findViewById(R.id.Recharge);
-
+        Button btnBuyrecord=findViewById(R.id.Buyrecord);
         btnEditUserInfo.setOnClickListener(v -> {
             // 跳转到修改用户信息页面，传递 userId
             Intent intent = new Intent(MyselfActivity.this, EditUserInfoActivity.class);
@@ -34,10 +34,16 @@ public class MyselfActivity extends AppCompatActivity {
         });
 
         btnRecharge.setOnClickListener(v -> {
-            // 跳转到充值页面，传递 money
+            // 跳转到充值页面
             Intent intent = new Intent(MyselfActivity.this, RechargeActivity.class);
-            intent.putExtra("money", money);
+            // No need to pass money if not used in RechargeActivity
             startActivity(intent);
+        });
+
+        btnBuyrecord.setOnClickListener(view -> {
+            Intent intent = new Intent(MyselfActivity.this,BuyRecordActivity.class);
+            startActivity(intent);
+
         });
     }
 }

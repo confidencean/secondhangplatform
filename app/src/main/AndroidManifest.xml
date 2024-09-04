@@ -47,6 +47,10 @@
         
         <activity android:name=".EditUserInfoActivity"
             android:exported="true"/>
+
+        <activity android:name=".BuyRecordActivity"
+            android:exported="true"/>
+
     </application>
 
 </manifest>
