@@ -34,4 +34,11 @@
         android:text="我的购买记录"
         android:layout_marginTop="16dp"/>
 
+    <Button
+        android:id="@+id/Moneyrecord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="我的支出与收入"
+        android:layout_marginTop="16dp"/>
+
 </LinearLayout>
