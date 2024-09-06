@@ -41,10 +41,10 @@
             android:layout_weight="1"/>
 
         <Button
-            android:id="@+id/btnPurchased"
+            android:id="@+id/btnSell"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="已购买商品"
+            android:text="已卖出商品"
             android:layout_weight="1"/>
 
         <Button

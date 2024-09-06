@@ -51,6 +51,8 @@
         <activity android:name=".BuyRecordActivity"
             android:exported="true"/>
 
+<activity android:name=".TransactionRecordActivity"
+    android:exported="true"/>
     </application>
 
 </manifest>

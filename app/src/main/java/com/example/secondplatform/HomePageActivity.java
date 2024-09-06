@@ -23,6 +23,8 @@ import java.util.ArrayList;
 
 public class HomePageActivity extends AppCompatActivity {
     private Button  mybutton;
+    private  Button transaction;
+    private  Button mysell;
     private ListView listViewCategories;
     private TextView tvCategories;
 
@@ -46,7 +48,22 @@ public class HomePageActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        transaction=findViewById(R.id.btnTransactionRecord);
+        transaction.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomePageActivity.this, TransactionRecordActivity.class);
+                intent.putExtra("userId", userId);
+                startActivity(intent);
+            }
+        });
+    mysell=findViewById(R.id.btnSell);
+    mysell.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
 
+        }
+    });
 
         listViewCategories = findViewById(R.id.listViewProducts);
         tvCategories = findViewById(R.id.tvCategories);
