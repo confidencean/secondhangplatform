@@ -51,8 +51,20 @@
         <activity android:name=".BuyRecordActivity"
             android:exported="true"/>
 
-<activity android:name=".TransactionRecordActivity"
-    android:exported="true"/>
+        <activity android:name=".TransactionRecordActivity"
+        android:exported="true"/>
+
+        <activity android:name=".MessageActivity"
+            android:exported="true"/>
+
+        <activity android:name=".SendMessageActivity"
+            android:exported="true"/>
+
+        <activity android:name=".FromUserActivity"
+            android:exported="true"/>
+
+        <activity android:name=".ReceivedMessagesActivity"
+            android:exported="true"/>
     </application>
 
 </manifest>

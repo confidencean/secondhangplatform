@@ -25,6 +25,7 @@ public class HomePageActivity extends AppCompatActivity {
     private Button  mybutton;
     private  Button transaction;
     private  Button mysell;
+    private  Button message;
     private ListView listViewCategories;
     private TextView tvCategories;
 
@@ -64,6 +65,19 @@ public class HomePageActivity extends AppCompatActivity {
 
         }
     });
+
+    message=findViewById(R.id.btnMessages);
+    message.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            Intent intent = new Intent(HomePageActivity.this, MessageActivity.class);
+            startActivity(intent);
+        }
+    });
+
+
+
+
 
         listViewCategories = findViewById(R.id.listViewProducts);
         tvCategories = findViewById(R.id.tvCategories);
