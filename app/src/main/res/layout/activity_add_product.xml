@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:padding="16dp">
+
+<!-- 商品描述 -->
+    <EditText
+        android:id="@+id/etContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入商品描述"
+        android:inputType="textMultiLine"
+        android:minHeight="48dp" />
+
+<!-- 商品价格 -->
+    <EditText
+        android:id="@+id/etPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入商品价格"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp" />
+
+<!-- 卖家地址 -->
+    <EditText
+        android:id="@+id/etAddr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入卖家地址"
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+<!-- 图片代码 -->
+    <EditText
+        android:id="@+id/etImageCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入图片代码"
+        android:inputType="number"
+        android:minHeight="48dp" />
+
+<!-- 商品类型下拉菜单 -->
+    <Spinner
+        android:id="@+id/spinnerType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp" />
+
+<!-- 添加商品按钮 -->
+<Button
+    android:id="@+id/btnAddProduct"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="添加商品" />
+
+    <Button
+        android:id="@+id/SaveProduct"
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        android:text="保存商品信息" />
+
+</LinearLayout>

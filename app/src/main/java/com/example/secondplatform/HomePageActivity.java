@@ -26,6 +26,7 @@ public class HomePageActivity extends AppCompatActivity {
     private  Button transaction;
     private  Button mysell;
     private  Button message;
+    private  Button product;
     private ListView listViewCategories;
     private TextView tvCategories;
 
@@ -75,6 +76,14 @@ public class HomePageActivity extends AppCompatActivity {
         }
     });
 
+    product=findViewById(R.id.btnPostProduct);
+    product.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            Intent intent =new Intent(HomePageActivity.this,ProductActivity.class);
+            startActivity(intent);
+        }
+    });
 
 
 

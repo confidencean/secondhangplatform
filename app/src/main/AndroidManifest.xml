@@ -65,6 +65,20 @@
 
         <activity android:name=".ReceivedMessagesActivity"
             android:exported="true"/>
+
+        <activity android:name=".ProductActivity"
+            android:exported="true"/>
+        <activity android:name=".AddProductActivity"
+            android:exported="true"/>
+
+        <activity android:name=".ViewPublishedProductsActivity"
+            android:exported="true"/>
+
+        <activity android:name=".SaveProductActivity"
+            android:exported="true"/>
+
+        <activity android:name=".DeleteProductActivity"
+            android:exported="true"/>
     </application>
 
 </manifest>
